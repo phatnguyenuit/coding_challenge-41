@@ -1,23 +1,39 @@
 {
-  "name": "code-hello-world",
+	"name": "code-hello-world",
 	"displayName": "code-hello-world",
 	"description": "Hello world VS Code extension",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.54.0"
 	},
+	"publisher": "fast-nguyen",
 	"categories": [
 		"Other"
 	],
 	"activationEvents": [
-        "onCommand:code-hello-world.helloWorld"
+		"onCommand:code-hello-world.helloWorld",
+		"onCommand:code-hello-world.helloPrompt",
+		"onCommand:code-hello-world.quickPick",
+		"onCommand:code-hello-world.getTextSelection"
 	],
 	"main": "./dist/extension.js",
 	"contributes": {
 		"commands": [
 			{
 				"command": "code-hello-world.helloWorld",
-				"title": "Hello World"
+				"title": "[code-hello-world] Hello world"
+			},
+			{
+				"command": "code-hello-world.helloPrompt",
+				"title": "[code-hello-world] Hello prompt"
+			},
+			{
+				"command": "code-hello-world.quickPick",
+				"title": "[code-hello-world] Quick pick"
+			},
+			{
+				"command": "code-hello-world.getTextSelection",
+				"title": "[code-hello-world] Get text selection"
 			}
 		]
 	},
